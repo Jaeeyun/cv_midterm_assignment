@@ -12,6 +12,8 @@
    - `weights='distance'`: closer neighbors have higher influence  
    - Larger **k** yields smoother decision boundaries, smaller **k** yields more variance
 
+> Since CIFAR-10 is a multi-class dataset, using even values or powers of two for k does not increase the risk of ties, so I experimented with k = 1, 2, 4, 8, ..., 2048 without theoretical issues.
+
 ---
 
 ### 1. Train/Test Split
